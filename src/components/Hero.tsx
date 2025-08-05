@@ -38,7 +38,7 @@ const Hero = () => {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed" style={{ color: '#4A7FA7' }}>
+          <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed" style={{ color: '#6071B6' }}>
             Transformo ideias em páginas profissionais que captam clientes e aumentam suas vendas.
             Design moderno, foco em conversão e resultados garantidos.
           </p>
