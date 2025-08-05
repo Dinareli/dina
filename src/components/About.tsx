@@ -118,7 +118,7 @@ const About = () => {
               >
                 <CardContent className="p-6 text-center">
                   <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                    <service.icon className="h-6 w-6 text-white" />
+                    <service.icon className="h-6 w-6 text-foreground" />
                   </div>
                   <h3 className="text-lg font-semibold mb-3 group-hover:text-primary transition-colors">
                     {service.title}
