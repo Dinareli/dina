@@ -28,9 +28,9 @@ All colors MUST be HSL.
     --secondary: 240 100% 25%;
     --secondary-foreground: 0 0% 100%;
 
-    /* Muted tones */
+    /* Muted tones - slightly darker for better readability */
     --muted: 210 25% 97%;
-    --muted-foreground: 220 10% 50%;
+    --muted-foreground: 220 15% 40%;
 
     /* Accent - Custom blue for subtitle */
     --accent: 207 39% 47%;
