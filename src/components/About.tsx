@@ -80,7 +80,7 @@ const About = () => {
               <h3 className="text-lg font-semibold mb-4">Minhas Especialidades</h3>
               <div className="flex flex-wrap gap-2">
                 {skills.map((skill) => (
-                  <Badge key={skill} variant="secondary" className="bg-accent hover:bg-accent/80">
+                  <Badge key={skill} variant="secondary">
                     {skill}
                   </Badge>
                 ))}
