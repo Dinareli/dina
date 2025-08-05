@@ -24,16 +24,16 @@ All colors MUST be HSL.
     --primary-light: 240 100% 35%;
     --primary-dark: 240 100% 20%;
 
-    /* Secondary - Soft lilac */
-    --secondary: 280 25% 92%;
-    --secondary-foreground: 220 15% 25%;
+    /* Secondary - Dark navy for specialties cards */
+    --secondary: 240 100% 25%;
+    --secondary-foreground: 0 0% 100%;
 
     /* Muted tones */
     --muted: 210 25% 97%;
     --muted-foreground: 220 10% 50%;
 
-    /* Accent - Gentle purple */
-    --accent: 260 60% 92%;
+    /* Accent - Custom blue for subtitle */
+    --accent: 207 39% 47%;
     --accent-foreground: 220 15% 25%;
 
     --destructive: 0 84.2% 60.2%;
