@@ -70,8 +70,8 @@ const Footer = () => {
           <div className="text-center md:text-right">
             <h4 className="font-semibold mb-4">Contato</h4>
             <div className="space-y-2 text-sm text-background/80">
-              <p>contato@landingexpert.com</p>
-              <p>(11) 99999-9999</p>
+              <p>dina.devweb@gmail.com</p>
+              <p>(11) 95945-1913</p>
               <p>São Paulo, SP</p>
             </div>
           </div>

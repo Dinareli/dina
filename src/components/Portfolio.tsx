@@ -91,7 +91,7 @@ const Portfolio = () => {
                   {project.technologies.map((tech) => (
                     <span 
                       key={tech}
-                      className="bg-accent text-accent-foreground px-2 py-1 rounded text-xs"
+                      className="bg-accent text-white px-2 py-1 rounded text-xs"
                     >
                       {tech}
                     </span>

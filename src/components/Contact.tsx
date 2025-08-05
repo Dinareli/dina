@@ -30,8 +30,15 @@ const Contact = () => {
 
   const handleWhatsApp = () => {
     const message = "Olá! Gostaria de saber mais sobre seus serviços de landing pages.";
-    const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/5511959451913?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
+  };
+
+  const handleEmail = () => {
+    const subject = "Orçamento - Landing Page";
+    const body = "Olá! Gostaria de saber mais sobre seus serviços de landing pages.";
+    const emailUrl = `mailto:dina.devweb@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.open(emailUrl, '_blank');
   };
 
   return (
@@ -139,41 +146,27 @@ const Contact = () => {
             </Card>
 
             {/* Email Card */}
-            <Card className="border-0 shadow-lg">
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer" onClick={handleEmail}>
               <CardContent className="p-6">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
                     <Mail className="h-6 w-6 text-white" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-lg font-semibold mb-1">E-mail</h3>
+                    <h3 className="text-lg font-semibold mb-1 group-hover:text-primary transition-colors">E-mail</h3>
                     <p className="text-muted-foreground text-sm">
-                      contato@landingexpert.com
+                      dina.devweb@gmail.com
                     </p>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Phone Card */}
-            <Card className="border-0 shadow-lg">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
-                    <Phone className="h-6 w-6 text-primary" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-lg font-semibold mb-1">Telefone</h3>
-                    <p className="text-muted-foreground text-sm">
-                      (11) 99999-9999
-                    </p>
-                  </div>
+                  <Button variant="outline" size="sm">
+                    Enviar
+                  </Button>
                 </div>
               </CardContent>
             </Card>
 
             {/* Info Box */}
-            <div className="bg-gradient-primary p-6 rounded-lg text-white">
+            <div className="bg-gradient-primary p-6 rounded-lg text-black">
               <h3 className="text-lg font-semibold mb-3">Orçamento Gratuito</h3>
               <p className="text-sm opacity-90 leading-relaxed">
                 Receba uma análise completa do seu projeto sem compromisso. 
