@@ -26,7 +26,7 @@ All colors MUST be HSL.
 
     /* Secondary - Dark navy for specialties cards */
     --secondary: 240 100% 25%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary-foreground: 210 11% 96%;
 
     /* Muted tones - slightly darker for better readability */
     --muted: 210 25% 97%;
