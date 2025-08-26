@@ -180,7 +180,7 @@ const Contact = () => {
             <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer" onClick={handleEmail}>
               <CardContent className="p-6">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform aspect-square shrink-0">
                     <Mail className="h-6 w-6 text-white" />
                   </div>
                   <div className="flex-1">
