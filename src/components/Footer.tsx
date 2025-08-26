@@ -38,28 +38,28 @@ const Footer = () => {
           {/* Quick Links */}
           <div className="text-center">
             <h4 className="font-semibold mb-4">Links Rápidos</h4>
-            <div className="space-y-2">
+            <div className="space-y-2 flex flex-col items-center">
               <button 
                 onClick={() => document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' })}
-                className="block text-background/80 hover:text-background transition-colors text-sm"
+                className="text-background/80 hover:text-background transition-colors text-sm"
               >
                 Início
               </button>
               <button 
                 onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
-                className="block text-background/80 hover:text-background transition-colors text-sm"
+                className="text-background/80 hover:text-background transition-colors text-sm"
               >
                 Portfólio
               </button>
               <button 
                 onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-                className="block text-background/80 hover:text-background transition-colors text-sm"
+                className="text-background/80 hover:text-background transition-colors text-sm"
               >
                 Sobre
               </button>
               <button 
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                className="block text-background/80 hover:text-background transition-colors text-sm"
+                className="text-background/80 hover:text-background transition-colors text-sm"
               >
                 Contato
               </button>
