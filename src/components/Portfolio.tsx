@@ -8,11 +8,11 @@ import project3 from "@/assets/project-3.jpg";
 const projects = [
   {
     id: 1,
-    title: "Studio Belle",
+    title: "Studio Whillet",
     description: "Página de agendamento com botão direto pro WhatsApp. Foco em conversão para profissionais da área estética.",
     image: project1,
     category: "Beleza & Estética",
-    link: "https://studio-belle-blond.vercel.app/",
+    link: "https://studio-whillet.vercel.app/",
     technologies: ["React", "Vite", "WhatsApp API"]
   },
   {
