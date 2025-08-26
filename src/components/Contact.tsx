@@ -6,6 +6,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, MessageCircle, Phone, Send } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from '@emailjs/browser';
+import { EMAILJS_CONFIG } from "@/config/emailjs";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -14,18 +16,47 @@ const Contact = () => {
     email: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // Simular envio do formulário
-    toast({
-      title: "Mensagem enviada!",
-      description: "Entrarei em contato em breve. Obrigado!",
-    });
+    setIsSubmitting(true);
 
-    // Limpar formulário
-    setFormData({ name: '', email: '', message: '' });
+    try {
+      // Configuração do EmailJS
+      const templateParams = {
+        to_email: 'dina.devweb@gmail.com',
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+        reply_to: formData.email
+      };
+
+      // Enviar e-mail usando EmailJS
+      await emailjs.send(
+        EMAILJS_CONFIG.SERVICE_ID,
+        EMAILJS_CONFIG.TEMPLATE_ID,
+        templateParams,
+        EMAILJS_CONFIG.PUBLIC_KEY
+      );
+
+      toast({
+        title: "Mensagem enviada com sucesso!",
+        description: "Entrarei em contato em breve. Obrigado!",
+      });
+
+      // Limpar formulário
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      console.error('Erro ao enviar e-mail:', error);
+      toast({
+        title: "Erro ao enviar mensagem",
+        description: "Tente novamente ou entre em contato diretamente pelo WhatsApp.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleWhatsApp = () => {
@@ -112,9 +143,9 @@ const Contact = () => {
                   />
                 </div>
 
-                <Button type="submit" variant="gradient" size="lg" className="w-full">
-                  Enviar Mensagem
-                  <Send className="h-4 w-4" />
+                <Button type="submit" variant="gradient" size="lg" className="w-full" disabled={isSubmitting}>
+                  {isSubmitting ? "Enviando..." : "Enviar Mensagem"}
+                  <Send className={`h-4 w-4 ${isSubmitting ? 'animate-spin' : ''}`} />
                 </Button>
               </form>
             </CardContent>

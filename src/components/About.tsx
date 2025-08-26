@@ -8,9 +8,8 @@ const skills = [
   "Otimização de Conversão",
   "React & Next.js",
   "Tailwind CSS",
+  "Vite",
   "Figma",
-  "WordPress",
-  "Google Analytics"
 ];
 
 const services = [

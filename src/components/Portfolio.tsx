@@ -9,11 +9,11 @@ const projects = [
   {
     id: 1,
     title: "Studio Belle",
-    description: "Página de agendamento com botão direto pro WhatsApp. Foco em conversão para salão de beleza.",
+    description: "Página de agendamento com botão direto pro WhatsApp. Foco em conversão para profissionais da área estética.",
     image: project1,
     category: "Beleza & Estética",
-    link: "https://example.com/studio-belle",
-    technologies: ["React", "Tailwind", "WhatsApp API"]
+    link: "https://studio-belle-blond.vercel.app/",
+    technologies: ["React", "Vite", "WhatsApp API"]
   },
   {
     id: 2,
