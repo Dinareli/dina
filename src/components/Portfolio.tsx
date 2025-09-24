@@ -17,12 +17,12 @@ const projects = [
   },
   {
     id: 2,
-    title: "Escola Conecta",
-    description: "Landing page para cursos online com sistema de inscrições e pagamento integrado.",
+    title: "BarberShop Time",
+    description: "Sistema completo de marcação de horários para barbearias. Organize seus clientes, profissionais e serviços de forma simples e eficiente",
     image: project2,
-    category: "Educação",
-    link: "https://example.com/escola-conecta",
-    technologies: ["Next.js", "Stripe", "CMS"]
+    category: "Beleza & Estética",
+    link: "https://barbershop-time.vercel.app/",
+    technologies: ["SaaS", "Typescript", "Vite", "Whatsapp API"]
   },
   {
     id: 3,
