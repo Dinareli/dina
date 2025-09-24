@@ -25,21 +25,21 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-accent/50 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
             <Star className="h-4 w-4 text-primary" />
-            <span className="text-sm font-medium">Especialista em Landing Pages</span>
+            <span className="text-sm font-medium">Especialista em SaaS</span>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Landing pages que{" "}
+            Saas que{" "}
             <span className="bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
-              vendem
+              facilitam
             </span>{" "}
-            para pequenos negócios e infoprodutores
+            a vida de pequenos negócios e infoprodutores
           </h1>
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-            Transformo ideias em páginas profissionais que captam clientes e aumentam suas vendas.
+            Transformo seu modo de trabalhar, captando mais clientes e aumentando seus resultados.
             Design moderno, foco em conversão e resultados garantidos.
           </p>
 

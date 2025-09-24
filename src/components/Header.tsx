@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import ThemeToggle from "@/components/ThemeToggle";
 import { useState } from "react";
 
 const Header = () => {
@@ -18,7 +19,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="text-xl font-bold text-primary">
-            Landing Expert
+            SaaS Expert
           </div>
 
           {/* Desktop Navigation */}
@@ -49,7 +50,8 @@ const Header = () => {
             </button>
           </nav>
 
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center gap-3">
+            <ThemeToggle />
             <Button 
               variant="gradient" 
               size="sm"
@@ -95,14 +97,17 @@ const Header = () => {
             >
               Contato
             </button>
-            <Button 
-              variant="gradient" 
-              size="sm" 
-              className="w-full"
-              onClick={() => scrollToSection('contact')}
-            >
-              Fale Comigo
-            </Button>
+            <div className="flex items-center gap-3">
+              <ThemeToggle />
+              <Button 
+                variant="gradient" 
+                size="sm" 
+                className="flex-1"
+                onClick={() => scrollToSection('contact')}
+              >
+                Fale Comigo
+              </Button>
+            </div>
           </nav>
         )}
       </div>

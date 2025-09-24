@@ -28,9 +28,9 @@ const Footer = () => {
           
           {/* Brand */}
           <div className="text-center md:text-left">
-            <h3 className="text-xl font-bold mb-4">Landing Expert</h3>
+            <h3 className="text-xl font-bold mb-4">SaaS Expert</h3>
             <p className="text-background/80 text-sm leading-relaxed">
-              Especialista em landing pages que convertem. 
+              Especialista em Saas que facilitam a vida de verdade. 
               Transformando ideias em resultados digitais.
             </p>
           </div>
@@ -81,7 +81,7 @@ const Footer = () => {
         <div className="border-t border-background/20 pt-8 text-center">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-background/60 text-sm">
-              © {currentYear} Landing Expert. Todos os direitos reservados.
+              © {currentYear} SaaS Expert. Todos os direitos reservados.
             </p>
             
             <div className="flex items-center gap-2 text-background/60 text-sm">

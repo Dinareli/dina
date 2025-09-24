@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Check, Code, Palette, Zap, Target, Heart } from "lucide-react";
 
 const skills = [
+  "SaaS",
   "Landing Pages",
   "Design Responsivo", 
   "Otimização de Conversão",

@@ -3,15 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Expert</title>
+    <title>SaaS Expert</title>
+
+    <script>
+      (function() {
+        try {
+          var stored = localStorage.getItem('theme');
+          var isDark = stored ? stored === 'dark' : false; // padrão: claro
+          var root = document.documentElement;
+          if (isDark) {
+            root.classList.add('dark');
+          } else {
+            root.classList.remove('dark');
+          }
+        } catch (e) {
+          // no-op
+        }
+      })();
+    </script>
 
     <!-- SEO -->
-    <meta name="description" content="Landing Expert - Landing pages que vendem para pequenos negócios e infoprodutores." />
-    <meta name="author" content="Landing Expert" />
+    <meta name="description" content="SaaS Expert - SaaS que facilitam a vida de pequenos negócios e infoprodutores." />
+    <meta name="author" content="SaaS Expert" />
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="Landing Expert - Landing Pages que convertem" />
-    <meta property="og:description" content="Landing Expert - Landing Pages que convertem." />
+    <meta property="og:title" content="SaaS Expert - SaaS Pages que convertem" />
+    <meta property="og:description" content="SaaS Expert - SaaS Pages que convertem." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="/preview.png" />
 

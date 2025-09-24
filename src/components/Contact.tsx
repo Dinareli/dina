@@ -60,14 +60,14 @@ const Contact = () => {
   };
 
   const handleWhatsApp = () => {
-    const message = "Olá! Gostaria de saber mais sobre seus serviços de landing pages.";
+    const message = "Olá! Gostaria de saber mais sobre seus serviços de SaaS.";
     const whatsappUrl = `https://wa.me/5511959451913?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
   const handleEmail = () => {
-    const subject = "Orçamento - Landing Page";
-    const body = "Olá! Gostaria de saber mais sobre seus serviços de landing pages.";
+    const subject = "Orçamento - SaaS";
+    const body = "Olá! Gostaria de saber mais sobre seus serviços de SaaS.";
     const emailUrl = `mailto:dina.devweb@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.open(emailUrl, '_blank');
   };
@@ -90,7 +90,7 @@ const Contact = () => {
           </h2>
 
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Pronto para transformar sua ideia em uma landing page que converte? 
+            Pronto para transformar seu negócio com algo moderno e eficiente? 
             Entre em contato e vamos conversar sobre seu projeto!
           </p>
         </div>
@@ -181,7 +181,7 @@ const Contact = () => {
               <CardContent className="p-6">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform aspect-square shrink-0">
-                    <Mail className="h-6 w-6 text-white" />
+                    <Mail className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-lg font-semibold mb-1 group-hover:text-primary transition-colors">E-mail</h3>
@@ -197,7 +197,7 @@ const Contact = () => {
             </Card>
 
             {/* Info Box */}
-            <div className="bg-gradient-primary p-6 rounded-lg text-black">
+            <div className="gradient-primary p-6 rounded-lg text-primary-foreground">
               <h3 className="text-lg font-semibold mb-3">Orçamento Gratuito</h3>
               <p className="text-sm opacity-90 leading-relaxed">
                 Receba uma análise completa do seu projeto sem compromisso. 
