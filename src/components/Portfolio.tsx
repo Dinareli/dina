@@ -6,14 +6,14 @@ import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
 
 const projects = [
-  {
+ {
     id: 1,
-    title: "Studio Whillet",
-    description: "Página de agendamento com botão direto pro WhatsApp. Foco em conversão para profissionais da área estética.",
+    title: "Genpfy",
+    description: "Saas focado em geração de prompt para lovable.dev. Aumente a produtividade e criatividade com prompts personalizados e acertivos para suas necessidades.",
     image: project1,
-    category: "Beleza & Estética",
-    link: "https://studio-whillet.vercel.app/",
-    technologies: ["React", "Vite", "WhatsApp API"]
+    category: "Tecnologia e IA",
+    link: "https://genpfy.vercel.app/",
+    technologies: ["Lovable", "IA", "Prompt"]
   },
   {
     id: 2,
@@ -24,15 +24,15 @@ const projects = [
     link: "https://barbershop-time.vercel.app/",
     technologies: ["SaaS", "Typescript", "Vite", "Whatsapp API"]
   },
-  {
-    id: 3,
-    title: "Nutri Mariana",
-    description: "Página de consulta nutricional com agendamento online e formulário de avaliação.",
+   {
+    id: 1,
+    title: "Studio Whillet",
+    description: "Página de agendamento com botão direto pro WhatsApp. Foco em conversão para profissionais da área estética.",
     image: project3,
-    category: "Saúde",
-    link: "https://example.com/nutri-mariana",
-    technologies: ["React", "Calendar API", "Forms"]
-  }
+    category: "Beleza & Estética",
+    link: "https://studio-whillet.vercel.app/",
+    technologies: ["React", "Vite", "WhatsApp API"]
+  },
 ];
 
 const Portfolio = () => {
